@@ -11,3 +11,6 @@ vim.wo.relativenumber = true
 
 vim.opt.fillchars:append("eob: ")  -- remove o ~ das linhas "End Of Buffer"
 
+
+vim.cmd.colorscheme("tokyonight")
+
