@@ -40,3 +40,7 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, opts)
 
 vim.keymap.set("n", "<Tab>", ":BufferLineCycleNext<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<S-Tab>", ":BufferLineCyclePrev<CR>", { noremap = true, silent = true })
+
+
+-- Abrir Mason com <leader>ms
+vim.keymap.set("n", "<leader>ms", "<cmd>Mason<cr>", { desc = "Abrir Mason" })
