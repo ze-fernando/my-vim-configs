@@ -22,3 +22,10 @@ vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#FFD700" }) -- dourado, mude se q
 
 -- Ativa cursorline para destacar a linha atual
 vim.o.cursorline = true
+
+
+-- Indentação padrão (4 espaços)
+vim.opt.tabstop = 4      -- quantos espaços uma tab "vale"
+vim.opt.shiftwidth = 4   -- quantos espaços usar ao indentar
+vim.opt.expandtab = true -- converte Tab em espaços
+vim.opt.smartindent = true -- indentação automática inteligente

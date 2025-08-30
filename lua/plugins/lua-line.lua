@@ -10,8 +10,8 @@ return {
     require("lualine").setup({
       options = {
         theme = "auto", -- pode trocar pelo tema que quiser
-component_separators = { left = '', right = ''},
-    section_separators = { left = '', right = ''},     
+            component_separators = { left = '', right = ''},
+            section_separators = { left = '', right = ''},     
 			},
       sections = {
         lualine_a = { "mode" }, -- mostra o modo atual
