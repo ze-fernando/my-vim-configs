@@ -29,3 +29,15 @@ vim.opt.tabstop = 4      -- quantos espaços uma tab "vale"
 vim.opt.shiftwidth = 4   -- quantos espaços usar ao indentar
 vim.opt.expandtab = true -- converte Tab em espaços
 vim.opt.smartindent = true -- indentação automática inteligente
+
+
+-- Transparência geral
+vim.api.nvim_set_hl(0, "Normal",      { bg = "none" })
+vim.api.nvim_set_hl(0, "NormalNC",    { bg = "none" })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+
+-- Transparência no Neo-tree
+vim.api.nvim_set_hl(0, "NeoTreeNormal",    { bg = "none" })
+vim.api.nvim_set_hl(0, "NeoTreeNormalNC",  { bg = "none" })
+vim.api.nvim_set_hl(0, "NeoTreeEndOfBuffer", { bg = "none" })
+
