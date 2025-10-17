@@ -3,6 +3,7 @@ local opts = { noremap = true, silent = true }
 
 -- Salvar com Ctrl+s (normal e insert mode)
 vim.keymap.set("n", "<C-s>", ":w<CR>", opts)
+vim.keymap.set("n", "q", ":q", opts)
 vim.keymap.set("i", "<C-s>", "<Esc>:w<CR>a", opts)
 
 
@@ -33,10 +34,10 @@ local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, opts)
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, opts)
 
-vim.keymap.set("n", "<Tab>", ":BufferLineCycleNext<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<C-Tab>", ":BufferLineCyclePrev<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<PageUp>", ":BufferLineCycleNext<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<PageDown>", ":BufferLineCyclePrev<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>bc", ":BufferLineCloseOthers<CR>", { noremap = true, silent = true })
-vim.keymap.set("n", "<leader>bg", ":BufferLinePick<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>bb", ":BufferLinePick<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>bd", ":BufferLinePickClose<CR>", { noremap = true, silent = true })
 
 
@@ -44,3 +45,12 @@ vim.api.nvim_set_keymap('n', '<leader>/', ':nohlsearch<CR>', { noremap = true, s
 
 -- Abrir Mason com <leader>ms
 vim.keymap.set("n", "<leader>ms", "<cmd>Mason<cr>", { desc = "Abrir Mason" })
+
+
+-- Go to Definition 
+vim.keymap.set('n', '<leader>gd', function()
+  vim.lsp.buf.definition()
+end, { noremap = true, silent = true, desc = 'Go to Definition' })
+
+-- Lazygit
+vim.keymap.set('n', '<leader>lg', ':LazyGit<CR>', { noremap = true, silent = true, desc = 'Abrir LazyGit' })

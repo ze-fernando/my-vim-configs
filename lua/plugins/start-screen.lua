@@ -32,7 +32,7 @@ return {
 
 
 	-- Footer
-      dashboard.section.footer.val = "🌀 Neovim - Config by Ze Fernando"
+      dashboard.section.footer.val = "Neovim - Config by Ze Fernando"
 
       -- Estilo opcional para footer
       dashboard.section.footer.opts.hl = "Comment"

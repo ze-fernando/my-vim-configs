@@ -30,7 +30,7 @@ return {
 			end, opts)
 		end)
 
-		lsp.ensure_installed({ "pyright", "tsserver", "rust_analyzer", "intelephense" })
+		lsp.ensure_installed({ "pyright", "rust_analyzer", "intelephense" })
 		lsp.setup()
 
 		require("lspconfig").intelephense.setup({
