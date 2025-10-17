@@ -3,16 +3,19 @@ require("config.mappings")
 
 vim.opt.clipboard = "unnamedplus"
 
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+
 -- Ativa números absolutos
 vim.wo.number = true
 
--- Ativa números relativos (opcional)
+-- Ativa números relativos
 vim.wo.relativenumber = true
 
 vim.opt.fillchars:append("eob: ") -- remove o ~ das linhas "End Of Buffer"
 
 
-vim.cmd.colorscheme("tokyonight")
+vim.cmd.colorscheme("nightfox")
 
 -- Cor dos números das linhas normais
 vim.api.nvim_set_hl(0, "LineNr", { fg = "#FF5555" }) -- vermelho claro, mude pra cor que quiser
