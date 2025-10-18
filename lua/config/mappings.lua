@@ -34,6 +34,8 @@ local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, opts)
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, opts)
 
+vim.keymap.set("n", "<leader>it", ":Inspect<CR>", { noremap = true, silent = true })
+
 vim.keymap.set("n", "<PageUp>", ":BufferLineCycleNext<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<PageDown>", ":BufferLineCyclePrev<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>bc", ":BufferLineCloseOthers<CR>", { noremap = true, silent = true })
