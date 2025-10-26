@@ -33,7 +33,7 @@ return {
 		lsp.ensure_installed({ "pyright", "rust_analyzer", "intelephense" })
 		lsp.setup()
 
-		require("lspconfig").intelephense.setup({
+		vim.lsp.config('intelephense', {
 			settings = {
 				intelephense = {
 					environment = { includePaths = { "./vendor" } },
