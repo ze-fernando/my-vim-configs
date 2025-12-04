@@ -6,6 +6,10 @@ vim.keymap.set("n", "<C-s>", ":w<CR>", opts)
 vim.keymap.set("n", "q", ":q", opts)
 vim.keymap.set("i", "<C-s>", "<Esc>:w<CR>a", opts)
 
+-- Não mandar deletes para o clipboard
+vim.keymap.set({"n", "v"}, "c", '"_c')
+vim.keymap.set({"n", "v"}, "x", '"_x')
+
 
 -- Neo-tree toggle/focus/close com \
 vim.keymap.set("n", "\\", function()
