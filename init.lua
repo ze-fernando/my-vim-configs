@@ -1,4 +1,5 @@
-
+require("config.mappings")
+require("config.lazy")
 vim.opt.clipboard = "unnamedplus"
 
 vim.opt.ignorecase = true
@@ -12,8 +13,6 @@ vim.wo.relativenumber = true
 
 vim.opt.fillchars:append("eob: ") -- remove o ~ das linhas "End Of Buffer"
 
-
-vim.cmd.colorscheme("nightfox")
 
 -- Cor dos números das linhas normais
 vim.api.nvim_set_hl(0, "LineNr", { fg = "#FF5555" }) -- vermelho claro, mude pra cor que quiser
