@@ -58,5 +58,9 @@ vim.keymap.set('n', '<leader>gd', function()
   vim.lsp.buf.definition()
 end, { noremap = true, silent = true, desc = 'Go to Definition' })
 
+-- Diagnostics
+vim.keymap.set("n", "<leader>sd", vim.diagnostic.open_float)
+
 -- Lazygit
 vim.keymap.set('n', '<leader>lg', ':LazyGit<CR>', { noremap = true, silent = true, desc = 'Abrir LazyGit' })
+
