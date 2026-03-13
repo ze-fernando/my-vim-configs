@@ -15,7 +15,7 @@ vim.wo.relativenumber = true
 vim.opt.fillchars:append("eob: ") -- remove o ~ das linhas "End Of Buffer"
 
 
-vim.cmd.colorscheme("nightfox")
+vim.cmd.colorscheme("catppuccin")
 
 -- Cor dos números das linhas normais
 vim.api.nvim_set_hl(0, "LineNr", { fg = "#FF5555" }) -- vermelho claro, mude pra cor que quiser

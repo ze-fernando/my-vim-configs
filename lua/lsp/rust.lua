@@ -8,4 +8,15 @@ lspconfig.rust_analyzer.setup({
       },
     },
   },
+ imports = {
+        granularity = {
+          group = "module",
+        },
+        prefix = "self",
+      },
+      completion = {
+        autoimport = {
+          enable = true,
+        },
+      },
 })
