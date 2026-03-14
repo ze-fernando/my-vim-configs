@@ -5,18 +5,35 @@ lspconfig.rust_analyzer.setup({
     ["rust-analyzer"] = {
       diagnostics = {
         enable = true,
-      },
-    },
-  },
- imports = {
-        granularity = {
-          group = "module",
+        experimental = {
+          enable = true,
         },
-        prefix = "self",
       },
+
+      cargo = {
+        allFeatures = true,
+      },
+
+      checkOnSave = {
+        command = "clippy",
+      },
+
       completion = {
         autoimport = {
           enable = true,
         },
       },
+
+      imports = {
+        granularity = {
+          group = "module",
+        },
+        prefix = "self",
+      },
+
+      procMacro = {
+        enable = true,
+      },
+    },
+  },
 })

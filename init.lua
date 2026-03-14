@@ -44,3 +44,12 @@ vim.api.nvim_set_hl(0, "NeoTreeNormal",    { bg = "none" })
 vim.api.nvim_set_hl(0, "NeoTreeNormalNC",  { bg = "none" })
 vim.api.nvim_set_hl(0, "NeoTreeEndOfBuffer", { bg = "none" })
 
+-- Diagnostic
+vim.diagnostic.config({
+  virtual_text = true,
+  signs = true,
+  underline = true,
+  update_in_insert = false,
+  severity_sort = true,
+})
+
