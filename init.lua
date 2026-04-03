@@ -1,6 +1,6 @@
 require("config.lazy")
 require("config.mappings")
-
+vim.opt.runtimepath:append("~/.local/share/nvim/site/")
 vim.opt.clipboard = "unnamedplus"
 
 vim.opt.ignorecase = true

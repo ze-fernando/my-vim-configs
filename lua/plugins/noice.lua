@@ -23,7 +23,7 @@ return {
           },
         },
       },
-      messages = { enabled = true }, -- mensagens do Neovim
+      messages = { enabled = false }, -- mensagens do Neovim
       popupmenu = { enabled = true }, -- popup do autocompletar
     })
   end,
